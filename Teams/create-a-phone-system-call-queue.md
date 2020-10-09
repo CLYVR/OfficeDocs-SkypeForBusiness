@@ -135,9 +135,6 @@ For high volume queues, we recommend the following settings:
 
 You can choose to disconnect the call or redirect it to one of the call routing destinations. For example, you might have the caller leave a voicemail for the agents in the queue.
 
-> [!NOTE]
-> If the maximum number of calls is set to 0 then the greeting message will not play.
-
 ## Call timeout handling
 
 ![](media/call-queue-timeout-handling.png)
@@ -147,6 +144,9 @@ You can choose to disconnect the call or redirect it to one of the call routing 
 You can choose to disconnect the call or redirect it to one of the call routing destinations. For example, you might have the caller leave a voicemail for the agents in the queue.
 
 When you have selected your call timeout options, click **Save**.
+
+> [!NOTE]
+> When redirecting (transferring) overflow or timeout calls to an external phone number, the external phone number must be formatted as an E.164 (+cc+number) number for calls on Calling Plan numbers otherwise the redirection will fail.  If the call is on a Direct Routing number then the format for the external phone number is dependent on the SBC settings configured for the tenant.
 
 ## Caller ID for outbound calls
 
