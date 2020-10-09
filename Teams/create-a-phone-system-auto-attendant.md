@@ -95,6 +95,9 @@ For each menu option, specify the following:
 
 - **Redirect to** - the call routing destination used when callers choose this option. If you are redirecting to an auto attendant or call queue, choose the resource account associated with it.
 
+> [!NOTE]
+> When redirecting calls to an external phone number, the external phone number must be formatted as an E.164 (+cc+number) number for calls on Calling Plan numbers otherwise the redirection will fail.  If the call is on a Direct Routing number then the format for the external phone number is dependent on the SBC settings configured for the tenant.
+
 ### Directory search
 
 If you assign dial keys to destinations, we recommend that you choose **None** for **Directory search**. If a caller attempts to dial a name or extension using keys that are assigned to specific destinations, they may be unexpectedly routed to a destination before they finish entering the name or extension. We recommend that you create a separate auto attendant for directory search and have your main auto attendant link to it via a dial key.
