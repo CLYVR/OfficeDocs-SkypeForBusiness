@@ -133,6 +133,9 @@ You can choose to disconnect the call or redirect it to any of the call routing 
 
 > [!NOTE]
 > If the maximum number of calls is set to 0 then the greeting message will not play.
+>
+> External PSTN transfer via Direct Routing is not supported. 
+
 
 ## Call timeout handling
 
